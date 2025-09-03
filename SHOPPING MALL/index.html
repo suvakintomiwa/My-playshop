@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoporia - Your Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img  src="/Image/logo2.0.png" alt="Shoporia Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#electronics">Electronics</a></li>
+        <li><a href="#fashion">Fashion</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Electronics -->
+    <section id="electronics" class="category">
+      <h2>Electronics</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="/Image/Smartphone.jpeg" alt="Smartphone">
+          <h3>Smartphone</h3>
+          <p>$299</p>
+          <button onclick="addToCart('Smartphone', 299)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="/Image/Laptop.jpeg" alt="Laptop">
+          <h3>Laptop</h3>
+          <p>$899</p>
+          <button onclick="addToCart('Laptop', 899)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="/Image/Smart TV.jpeg" alt="Smart TV">
+          <h3>Smart TV</h3>
+          <p>$599</p>
+          <button onclick="addToCart('Smart TV', 599)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fashion -->
+    <section id="fashion" class="category">
+      <h2>Fashion</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="/Image/Jacket.jpeg" alt="Jacket">
+          <h3>Jacket</h3>
+          <p>$79</p>
+          <button onclick="addToCart('Jacket', 79)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="/Image/Sneakers.jpeg" alt="Sneakers">
+          <h3>Sneakers</h3>
+          <p>$120</p>
+          <button onclick="addToCart('Sneakers', 120)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="/Image/Dress.jpeg" alt="Dress">
+          <h3>Dress</h3>
+          <p>$99</p>
+          <button onclick="addToCart('Dress', 99)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessories -->
+    <section id="accessories" class="category">
+      <h2>Accessories</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="/Image/Smart Watches.jpeg" alt="Watch">
+          <h3>Smartwatch</h3>
+          <p>$199</p>
+          <button onclick="addToCart('Smartwatch', 199)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="/Image/Headphone.jpeg" alt="Headphones">
+          <h3>Headphones</h3>
+          <p>$49</p>
+          <button onclick="addToCart('Headphones', 49)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="/Image/Leather Bags.jpeg" alt="Bag">
+          <h3>Leather Bag</h3>
+          <p>$150</p>
+          <button onclick="addToCart('Leather Bag', 150)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart -->
+    <section id="cart" class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: $0</p>
+      <button id="checkout-btn">Checkout</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shoporia. All rights reserved.</p>
+  </footer>
+    <!--javascript-->
+  <script src="script.js"></script>
+</body>
+</html>
